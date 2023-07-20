@@ -1,9 +1,12 @@
 import React from "react";
+import Navigation from "../components/Navigation";
+import Logo from "../components/Logo";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="wrapper">
+      <Navigation />
+      <Logo />
     </div>
   );
 };

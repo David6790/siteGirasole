@@ -1,0 +1,18 @@
+.navigation ul {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+  font-weight: 300;
+  li {
+    color: black;
+    font-size: 15px;
+    scale: 1;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

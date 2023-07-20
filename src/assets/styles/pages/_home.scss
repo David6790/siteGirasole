@@ -1,0 +1,23 @@
+.logoMain {
+  max-width: 650px;
+  margin: auto;
+  transform: scale(1.5);
+  animation: progressLogo 2s both ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .infoText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 35px;
+  }
+}
