@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../components/layout/Header";
-import MenuBanner from "../components/MenuBanner";
+import MenuDetails from "../components/MenuDetails";
 
 const Menu = () => {
   return (
     <>
       <Header />
-      <MenuBanner />
+      <MenuDetails />
     </>
   );
 };
