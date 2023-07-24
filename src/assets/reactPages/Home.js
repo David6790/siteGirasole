@@ -1,12 +1,20 @@
 import React from "react";
-import Navigation from "../components/Navigation";
-import Logo from "../components/Logo";
+
+import Header from "../components/layout/Header";
+import Banner from "../components/Banner";
+import About from "../components/About";
+import Banner2 from "../components/Banner2";
+import Reservations from "./Reservations";
 
 const Home = () => {
   return (
     <div className="wrapper">
-      <Navigation />
-      <Logo />
+      <Header />
+      <Banner />
+      <About />
+      <Banner2 />
+      <Banner />
+      <Reservations />
     </div>
   );
 };

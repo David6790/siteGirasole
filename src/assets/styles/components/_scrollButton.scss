@@ -1,0 +1,22 @@
+.scrollButton {
+  a {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  span {
+    font-size: 50px;
+    font-weight: 100;
+
+    color: black;
+  }
+
+  .leftArrow {
+    left: 20px;
+  }
+
+  .rightArrow {
+    right: 20px;
+    scale: 1;
+  }
+}

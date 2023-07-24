@@ -1,23 +1,105 @@
-.logoMain {
-  max-width: 650px;
-  margin: auto;
-  transform: scale(1.5);
-  animation: progressLogo 2s both ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-  .infoText {
+.banner {
+  position: relative;
+  .title {
+    position: absolute;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-size: 40px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .btnResa {
+    padding: 10px 20px;
     margin-top: 20px;
-    margin-left: 35px;
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+    font-size: 15px;
+    scale: 1;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.aboutUs {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  .textAbout {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    .textContent {
+      width: 80%;
+      text-align: justify;
+      h3 {
+        font-size: 40px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .imgAbout {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 80%;
+      object-fit: cover;
+      border: solid 1px black;
+      padding: 15px;
+    }
+  }
+}
+
+.banner2 {
+  position: relative;
+  .banner2Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+
+    .banner2Content {
+      width: 60%;
+      text-align: center;
+      color: white;
+
+      h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
   }
 }

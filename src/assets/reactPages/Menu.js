@@ -1,10 +1,13 @@
 import React from "react";
+import Header from "../components/layout/Header";
+import MenuBanner from "../components/MenuBanner";
 
 const Menu = () => {
   return (
-    <div>
-      <h1>Menu</h1>
-    </div>
+    <>
+      <Header />
+      <MenuBanner />
+    </>
   );
 };
 
