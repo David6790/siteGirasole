@@ -15,7 +15,11 @@
     text-align: center;
     font-weight: 100;
     background-color: black;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
+    h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 50px;
+    }
   }
   .btnResa {
     padding: 10px 20px;
@@ -34,6 +38,7 @@
 
 .aboutUs {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 500px;
   .textAbout {
@@ -65,10 +70,10 @@
     align-items: center;
 
     img {
-      height: 80%;
+      height: 90%;
       object-fit: cover;
       border: solid 1px black;
-      padding: 15px;
+      padding: 5px;
     }
   }
 }
@@ -100,6 +105,55 @@
       p {
         font-size: 20px;
       }
+    }
+  }
+}
+.reservation {
+  width: 80%;
+  margin: auto;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  form {
+    display: flex;
+    gap: 40px;
+    input {
+      border: solid 1px black;
+      padding: 8px 5px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    .leftForm {
+      display: flex;
+      flex-direction: column;
+    }
+    .formRight {
+      display: flex;
+      flex-direction: column;
+    }
+    textarea {
+      border: solid 1px black;
+      width: 300px;
+      height: 80%;
+      margin-bottom: 20px;
+      padding: 20px;
+      resize: none;
+    }
+    .submit {
+      width: 150px;
     }
   }
 }

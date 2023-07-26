@@ -9,8 +9,8 @@ const Banner2 = () => {
           <p>
             Dans la vie, les choses les plus simples sont souvent les meilleures
             et il n’est nul besoin de préparer des plats élaborés et
-            sophistiqués pour passer un moment agréable. Au Il Girasole, une
-            cuisine simple et faite avec amour
+            sophistiqués pour passer un moment agréable. Au Il Girasole, nous
+            vous proposons une cuisine simple et faite avec amour
           </p>
         </div>
       </div>

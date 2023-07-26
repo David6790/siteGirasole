@@ -14,18 +14,6 @@ const Navigation = () => {
         >
           <li>notre carte</li>
         </NavLink>
-        <NavLink
-          to="/reservation"
-          className={(nav) => (nav.isActive ? "navActive" : "")}
-        >
-          <li>réservation</li>
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={(nav) => (nav.isActive ? "navActive" : "")}
-        >
-          <li>contactez-nous</li>
-        </NavLink>
       </ul>
     </div>
   );
