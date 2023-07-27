@@ -1,0 +1,15 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: black;
+  @include mobileVersion {
+    height: 50px;
+    text-align: center;
+    padding: 20px 1px;
+  }
+}

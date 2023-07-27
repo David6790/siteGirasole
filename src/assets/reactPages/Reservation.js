@@ -6,7 +6,6 @@ const Reservation = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_xpgmd0c",
@@ -17,6 +16,8 @@ const Reservation = () => {
       .then(
         (result) => {
           console.log(result.text);
+          form.current.reset();
+          alert("Réservation enregistrée");
         },
         (error) => {
           console.log(error.text);
@@ -28,12 +29,12 @@ const Reservation = () => {
     <div className="reservation">
       <h2>Réserver votre table</h2>
       <p>
-        Vous pouvez également effectuer vos réservations par sms au :
+        Il est également possible d'effectuer vos réservations par sms au :
         06.29.84.84.36
       </p>
       <form ref={form} onSubmit={sendEmail} className="formReservation">
         <div className="leftForm">
-          <label for="name">Nom</label>
+          <label>Nom</label>
           <input
             id="name"
             type="text"
@@ -73,7 +74,7 @@ const Reservation = () => {
         <div className="formRight">
           <label>Commentaires</label>
           <textarea name="message" placeholder="Dites-nous en plus" />
-          <input type="submit" value="Send" className="submit" />
+          <input type="submit" value="RESERVER" className="submit" />
         </div>
       </form>
     </div>

@@ -1,5 +1,7 @@
 .banner {
   position: relative;
+  @include mobileVersion {
+  }
   .title {
     position: absolute;
     display: flex;
@@ -15,10 +17,23 @@
     text-align: center;
     font-weight: 100;
     background-color: black;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
+    @include mobileVersion {
+      h1 {
+        font-size: 40px;
+      }
+    }
     h2 {
       font-family: "Cormorant Garamond", serif;
       font-size: 50px;
+      @include mobileVersion {
+        font-size: 30px;
+      }
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: 700;
     }
   }
   .btnResa {
@@ -36,12 +51,16 @@
   }
 }
 
-.aboutUs {
+.section {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 500px;
-  .textAbout {
+  height: 600px;
+  @include mobileVersion {
+    flex-direction: column;
+    height: 100%;
+  }
+  .textSection {
     width: 50%;
     margin: auto;
     height: 100%;
@@ -54,26 +73,43 @@
     .textContent {
       width: 80%;
       text-align: justify;
+      @include mobileVersion {
+        width: 100vw;
+        text-align: center;
+      }
       h3 {
+        font-family: "Cormorant Garamond", serif;
         font-size: 40px;
         margin-bottom: 40px;
+        @include mobileVersion {
+          font-size: 30px;
+          margin-top: 20px;
+          text-decoration: underline;
+        }
       }
       p {
         font-size: 18px;
+        @include mobileVersion {
+          display: none;
+        }
       }
     }
   }
-  .imgAbout {
-    width: 50%;
+  .imgSection {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     img {
-      height: 90%;
+      width: 50%;
       object-fit: cover;
       border: solid 1px black;
       padding: 5px;
+      @include mobileVersion {
+        width: 100%;
+        border: none;
+      }
     }
   }
 }
@@ -90,20 +126,30 @@
     justify-content: center;
     font-size: 48px;
     color: white;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
 
     .banner2Content {
       width: 60%;
       text-align: center;
       color: white;
+      @include mobileVersion {
+        width: 100%;
+        padding: 10px;
+      }
 
       h2 {
         font-family: "Cormorant Garamond", serif;
         font-size: 60px;
         margin-bottom: 20px;
+        @include mobileVersion {
+          font-size: 40px;
+        }
       }
       p {
         font-size: 20px;
+        @include mobileVersion {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -115,6 +161,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mobileVersion {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
 
   h2 {
     margin-top: 40px;
@@ -126,10 +177,16 @@
   }
   p {
     margin-bottom: 30px;
+    @include mobileVersion {
+      text-align: center;
+    }
   }
   form {
     display: flex;
     gap: 40px;
+    @include mobileVersion {
+      flex-direction: column;
+    }
     input {
       border: solid 1px black;
       padding: 8px 5px;
@@ -154,6 +211,76 @@
     }
     .submit {
       width: 150px;
+      &:hover {
+        background-color: lightgray;
+      }
+      &:active {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
+.banner3 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include mobileVersion {
+    height: auto;
+  }
+
+  .Banner3Container {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mobileVersion {
+      padding-bottom: 30px;
+    }
+    h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 60px;
+      color: white;
+      margin-bottom: 30px;
+      @include mobileVersion {
+        font-size: 40px;
+        margin-top: 10px;
+      }
+    }
+    .infoWrapper {
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      border: solid 1px white;
+      @include mobileVersion {
+        width: 90%;
+        font-size: 18px;
+      }
+
+      .adresse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          color: white;
+          margin-left: 30px;
+          font-size: 25px;
+        }
+      }
     }
   }
 }

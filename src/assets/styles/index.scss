@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./keyframes/keyframes";
 @import "./utils/generalite";
+@import "./utils/mixins";
 @import "./components/navigation";
 @import "./components/logo";
 @import "./pages/home";
@@ -8,3 +9,4 @@
 @import "./components/social";
 @import "./components/header";
 @import "./pages/menuPage";
+@import "./components/footer";

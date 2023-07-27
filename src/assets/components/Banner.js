@@ -1,13 +1,14 @@
 import React from "react";
 import Button from "./Button";
 
-const Banner = (ref) => {
+const Banner = ({ title, secondTitle }) => {
   return (
     <div className="parralax banner">
       <div className="title">
-        <h1>Il Girasole</h1>
-        <h2>La Trattoria revisitée</h2>
-        <Button buttonText={"Réserver votre table"} />
+        <h1>{title}</h1>
+        <h2>{secondTitle}</h2>
+
+        <Button buttonText={"Réserver votre table"} btnClass={"btnResa"} />
       </div>
     </div>
   );

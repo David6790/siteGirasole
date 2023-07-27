@@ -10,7 +10,7 @@
 }
 
 body {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-color: white;
   font-family: $mainFont;
@@ -20,10 +20,14 @@ body {
   .wrapper {
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
 }
 .navActive {
   border-bottom: solid 1px black;
+}
+a {
+  color: white;
 }
 
 .parralax {
@@ -40,5 +44,14 @@ body {
   background-position: center; /* Centre la position de l'image */
   background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
   background-image: url("../../../../public/img/banner2main.webp");
+  height: 100vh;
+}
+
+.parralax3 {
+  background-attachment: fixed; /* Fixe l'image pendant le scroll */
+  background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+  background-position: center; /* Centre la position de l'image */
+  background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
+  background-image: url("../../../../public/img/banner3.webp");
   height: 100vh;
 }
